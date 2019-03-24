@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		213142B11708393F00DE90BA /* FootKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 213142B01708393F00DE90BA /* FootKeyboard.m */; };
+		213142B317083BBB00DE90BA /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 213142B217083BBB00DE90BA /* IOKit.framework */; };
 		21AA0D3717082803002CCA6F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21AA0D3617082803002CCA6F /* Cocoa.framework */; };
 		21AA0D4117082803002CCA6F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 21AA0D3F17082803002CCA6F /* InfoPlist.strings */; };
 		21AA0D4317082803002CCA6F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 21AA0D4217082803002CCA6F /* main.m */; };
@@ -16,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		213142AF1708393F00DE90BA /* FootKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FootKeyboard.h; sourceTree = "<group>"; };
+		213142B01708393F00DE90BA /* FootKeyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FootKeyboard.m; sourceTree = "<group>"; };
+		213142B217083BBB00DE90BA /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
 		21AA0D3317082803002CCA6F /* FootKeyboardSetter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FootKeyboardSetter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21AA0D3617082803002CCA6F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		21AA0D3917082803002CCA6F /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -36,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				213142B317083BBB00DE90BA /* IOKit.framework in Frameworks */,
 				21AA0D3717082803002CCA6F /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -63,6 +69,7 @@
 		21AA0D3517082803002CCA6F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				213142B217083BBB00DE90BA /* IOKit.framework */,
 				21AA0D3617082803002CCA6F /* Cocoa.framework */,
 				21AA0D3817082803002CCA6F /* Other Frameworks */,
 			);
@@ -84,6 +91,8 @@
 			children = (
 				21AA0D4817082803002CCA6F /* FootKeyboardAppDelegate.h */,
 				21AA0D4917082803002CCA6F /* FootKeyboardAppDelegate.m */,
+				213142AF1708393F00DE90BA /* FootKeyboard.h */,
+				213142B01708393F00DE90BA /* FootKeyboard.m */,
 				21AA0D4B17082803002CCA6F /* MainMenu.xib */,
 				21AA0D3D17082803002CCA6F /* Supporting Files */,
 			);
@@ -169,6 +178,7 @@
 			files = (
 				21AA0D4317082803002CCA6F /* main.m in Sources */,
 				21AA0D4A17082803002CCA6F /* FootKeyboardAppDelegate.m in Sources */,
+				213142B11708393F00DE90BA /* FootKeyboard.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +274,7 @@
 		21AA0D5117082803002CCA6F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FootKeyboardSetter/FootKeyboardSetter-Prefix.pch";
@@ -276,6 +287,7 @@
 		21AA0D5217082803002CCA6F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FootKeyboardSetter/FootKeyboardSetter-Prefix.pch";
@@ -304,6 +316,7 @@
 				21AA0D5217082803002CCA6F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
